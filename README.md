@@ -9,6 +9,7 @@ General tips:
 * \\itemize within \\itemize looks really cool, makes custom bullets.
 * This website is enormously helpful for finding commands for making various symbols: http://detexify.kirelabs.org/classify.html.
 * This website is very helpful for making category theory diagram: https://tikzcd.yichuanshen.de/.
+* I prefer not using the `\par` command if at all possible. Just leave an empty space -- it more clearly shows the paragraph in source code, and avoids needless commands.
 
 Math tips:
 
