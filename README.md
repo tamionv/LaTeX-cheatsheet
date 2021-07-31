@@ -14,6 +14,7 @@ Math tips:
 * Don't forget to use display mode (\\[...\\]) whenever an equation becomes long, or especially tall.
 * Even though * is used to represent multiplication, it looks not the best -- I prefer \\times or just nothing at all.
 * Use \left and \right around parentheses for tall math objects, e.g. \\left( \\frac{1}{2} \\right)
+* Don't put empty lines before and after display mode! This makes all the indentation and spacing wrong.
 
 Some good lstlisting settings:
 
