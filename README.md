@@ -20,6 +20,8 @@ Math tips:
 * The equation environment is good for labelled equations; it puts a number like (14), which can then be referenced. Within this the aligned environment can be used for multiline equations which can be made to align at = signs. On the other hand, this disallows putting interline explanatory notes, like with align*.
 * The \\underbrace command is quite nice, it allows you to explain what a certain part of an equation is.
 * When making commands to be used in math mode, use \\ensuremath. For instance `\newcommand{\R}{\ensuremath{\mathbb{R}}}`.
+* If one wants a multicharacter italic variable name, do not just write the letters in math mode. For instance, if we want an italic "count" variable, do not write, for example, `2count + 1`. Rather, write `2\mathit{count} + 1`. Otherwise the kerning is wrong.
+* If one has an enumeration of severl math formulas within text, like "a = 1, b = 2, c = 3 and d = 4", prefer `$a = 1$, $b = 2$, $c = 3$ and $d = 4$`, not `$a = 1, b = 2, c = 3$ and $d = 4$`. This allows LaTeX to split the enumerated items.
 
 Tikz:
 
