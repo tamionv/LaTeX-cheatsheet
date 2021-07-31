@@ -9,6 +9,7 @@ General tips:
 * \\itemize within \\itemize looks really cool, makes custom bullets.
 * I prefer not using the `\par` command if at all possible. Just leave an empty space -- it more clearly shows the paragraph in source code, and avoids needless commands.
 * This is a rather obscure bug fix, but often if spacing after a command, adding a `{}` after the command, or a `%` (if it's at the end of a line) fixes it.
+* I usually use `interfootnotelinepenalty=10000000` or something like this, it tries to force footnotes to be on the same page where they are mentioned.
 
 Math tips:
 
@@ -16,6 +17,7 @@ Math tips:
 * Don't forget to use display mode (\\[...\\]) whenever an equation becomes long, or especially tall.
 * Even though * is used to represent multiplication, it looks not the best -- I prefer \\times or just nothing at all.
 * Use \left and \right around parentheses for tall math objects, e.g. \\left( \\frac{1}{2} \\right)
+* The amsthm package is completely indispensable.
 * Don't put empty lines before and after display mode! This makes all the indentation and spacing wrong.
 * The equation environment is good for labelled equations; it puts a number like (14), which can then be referenced. Within this the aligned environment can be used for multiline equations which can be made to align at = signs. On the other hand, this disallows putting interline explanatory notes, like with align*.
 * The \\underbrace command is quite nice, it allows you to explain what a certain part of an equation is.
@@ -24,6 +26,7 @@ Math tips:
 * If one has an enumeration of several math formulas within text, like "a = 1, b = 2, c = 3 and d = 4", prefer `$a = 1$, $b = 2$, $c = 3$ and $d = 4$`, not `$a = 1, b = 2, c = 3$ and $d = 4$`. This allows LaTeX to split the enumerated items.
 * This website is enormously helpful for finding commands for making various symbols: http://detexify.kirelabs.org/classify.html.
 * This website is very helpful for making category theory diagram: https://tikzcd.yichuanshen.de/.
+* I have almost always found the `\allowdisplaybreaks` command to be good -- it allows long equations to split between pages.
 
 Tikz:
 
