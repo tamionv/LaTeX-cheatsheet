@@ -7,6 +7,8 @@ General tips:
 * \\footnotemark is useful -- inline footnotes are often difficult to edit.
 * Use the \url command for urls.
 * \\itemize within \\itemize looks really cool, makes custom bullets.
+* This website is enormously helpful for finding commands for making various symbols: http://detexify.kirelabs.org/classify.html.
+* This website is very helpful for making category theory diagram: https://tikzcd.yichuanshen.de/.
 
 Math tips:
 
@@ -15,6 +17,13 @@ Math tips:
 * Even though * is used to represent multiplication, it looks not the best -- I prefer \\times or just nothing at all.
 * Use \left and \right around parentheses for tall math objects, e.g. \\left( \\frac{1}{2} \\right)
 * Don't put empty lines before and after display mode! This makes all the indentation and spacing wrong.
+* The equation environment is good for labelled equations; it puts a number like (14), which can then be referenced. Within this the aligned environment can be used for multiline equations which can be made to align at = signs. On the other hand, this disallows putting interline explanatory notes, like with align*.
+* The \\underbrace command is quite nice, it allows you to explain what a certain part of an equation is.
+* When making commands to be used in math mode, use \\ensuremath. For instance `\newcommand{\R}{\ensuremath{\mathbb{R}}}`.
+
+Tikz:
+
+* Tikz is, in my opinion, rather unpleasant to work with. However, I've found it useful more than once to write scripts that automatically generate tikz diagrams.
 
 Some good lstlisting settings:
 
