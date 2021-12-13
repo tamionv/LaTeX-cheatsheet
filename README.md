@@ -1,5 +1,6 @@
 General tips:
 
+* Always use microtype
 * Don't use " as quotes. Use \`\`..'' instead. This way the quotes will actually render asymmetrically, as they should.
 * Remember to put a space after punctuation. This is just a general editing tip though.
 * Whenever writing something like "N (N <= 10)", use something like $N$ ($N <= 10$). This puts proper spaces in. Also it is more logical -- the parentheses aren't "math parentheses".
